@@ -1,0 +1,208 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eef2f7;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        .cv {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #ffffff;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            min-height: 1100px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            background: #172554;
+            color: white;
+            padding: 40px 28px;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-circle {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+            font-weight: bold;
+        }
+
+        .profile-photo {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 20px;
+            display: block;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center top;
+            border: 4px solid #ffffff;
+        }
+
+        .profile h1 {
+            font-size: 24px;
+            line-height: 1.25;
+            margin-bottom: 8px;
+        }
+
+        .profile p {
+            color: #bfdbfe;
+            font-size: 14px;
+        }
+
+        .side-section {
+            margin-top: 30px;
+        }
+
+        .side-section h2 {
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #3b82f6;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            font-size: 14px;
+            margin-bottom: 12px;
+            word-break: break-word;
+        }
+
+        .skills {
+            list-style: none;
+        }
+
+        .skills li {
+            background: #1e3a8a;
+            margin-bottom: 9px;
+            padding: 8px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+
+        /* MAIN CONTENT */
+        .content {
+            padding: 45px 50px;
+        }
+
+        .section {
+            margin-bottom: 36px;
+        }
+
+        .section-title {
+            color: #172554;
+            font-size: 22px;
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #2563eb;
+        }
+
+        .about {
+            color: #4b5563;
+            text-align: justify;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 24px;
+            border-left: 2px solid #bfdbfe;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -7px;
+            top: 4px;
+            width: 12px;
+            height: 12px;
+            background: #2563eb;
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            font-size: 13px;
+            color: #2563eb;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .timeline-item h3 {
+            font-size: 17px;
+            color: #111827;
+        }
+
+        .timeline-item h4 {
+            font-size: 14px;
+            color: #4b5563;
+            margin-bottom: 7px;
+        }
+
+        .timeline-item p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .certification {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            color: #9ca3af;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 750px) {
+            .cv {
+                grid-template-columns: 1fr;
+                margin: 0;
+                border-radius: 0;
+            }
+
+            .sidebar {
+                padding: 35px 25px;
+            }
+
+            .content {
+                padding: 35px 25px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .cv {
+                margin: 0;
+                box-shadow: none;
+                border-radius: 0;
+            }
+        }
